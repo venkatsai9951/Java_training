@@ -36,16 +36,12 @@ class Employee1
     {
         System.out.println("Name of the Employee is "+empName);
         System.out.println("Salary of the Employee is "+salary);
-        System.out.println("Job Title of the Employee is "+JobTitle);
+        System.out.println("Job Title of the Employee is "+JobTitle+"\n");
     }
     public void updateSalary(float percentage)
     {
         float x=percentage*salary/100;
-        System.out.println("Salary is increased from "+salary+ "to "+((float)salary+x));
-    }
-    public void printEmployeeDetails()
-    {
-        System.out.println(salary);
+        System.out.println("Salary is increased from "+salary+ " to "+((float)salary+x)+"\n");
     }
 }
 
@@ -82,6 +78,13 @@ class TrafficLight
     }
 }
 
+class Demo1
+{
+    public void displayMessage()
+    {
+        System.out.println("This message is printed using a class");
+    }
+}
 
 public class ObjectOrientedProgramming {
     public static void main(String[] args) {
@@ -101,7 +104,10 @@ public class ObjectOrientedProgramming {
         // aIt also has getter and setter methods to access and modify these attributes.
         //In addition, it provides methods for raising salaries by a certain percentage and printing employee information.
         Employee1 e=new Employee1("Sujith",20000,"Tech");
-        e.printEmployeeDetails();
+        e.getEmployeeDetails();
+        e.setEmployeeDetails("Venkat",25000,"Tech Lead");
+        e.getEmployeeDetails();
+        e.updateSalary(10);
 
 
 
@@ -119,6 +125,12 @@ public class ObjectOrientedProgramming {
         t.setter("Red",14);
         t.getter();
         t.checkLight();
+
+
+        // Write a java method to print message using a class
+
+        Demo1 d= new Demo1();
+        d.displayMessage();
     }
 
 
