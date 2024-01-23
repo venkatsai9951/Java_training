@@ -16,7 +16,7 @@ public class MethodTest {
         MethodTest m = new MethodTest();
         int d=m.sum(10,10);  // Method Call
         System.out.println(d);
-        int e=sum(10,20,30);
+        int e=m.sum(10,20,30);
         System.out.println(e);
 
     }
