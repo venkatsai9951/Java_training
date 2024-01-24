@@ -14,9 +14,5 @@ public class TypeConversion {
         System.out.println("String after converting it to float "+f+"\nEnter a double value for String Conversion");
         Double g=sc.nextDouble();
         System.out.println("Double after Converting it to string "+g);
-
-
-
-
     }
 }

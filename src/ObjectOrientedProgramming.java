@@ -52,6 +52,7 @@ class TrafficLight
     public TrafficLight(String colour,int d)
     {
         this.colour=colour;
+//        colour=colour;
         this.duration=d;
     }
     public void setter(String colour,int d)
